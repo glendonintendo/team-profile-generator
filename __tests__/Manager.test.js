@@ -1,3 +1,4 @@
+const { expect } = require("@jest/globals");
 const Manager = require("../lib/Manager.js");
 
 test('creates Manager object that extends Employee object', () => {
@@ -23,4 +24,5 @@ test("Manager object role property is overwritten to 'Manager'", () => {
     const manager = new Manager("Ein", 4, "corgi@datadog.com", 1);
 
     expect(manager.role).toBe("Manager");
+    expect(manager.getRole()).toBe("Manager");
 });
