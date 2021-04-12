@@ -19,7 +19,7 @@ test('Intern object has property of school with getter method', () => {
 });
 
 test("Intern object role property is overwritten to 'Intern'", () => {
-    const intern = new Intern("Armin Arlert", 9, "colossaltitan@humanity.com", "Scout Corps");
+    const intern = new Intern("Armin Arlert", 10, "colossaltitan@humanity.com", "Scout Corps");
 
     expect(intern.role).toBe("Intern");
     expect(intern.getRole()).toBe("Intern");
