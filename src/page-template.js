@@ -4,11 +4,11 @@ const generateCardSection = (employeeData) => {
     employeeData.forEach(employee => {
         let card = `
             <div class="employee-card">
-                <h3>${employee.name}</h3>
-                <h4>${employee.role}</h3>
+                <h3>${employee.getName()}</h3>
+                <h4>${employee.getRole()}</h3>
                 <ul>
-                    <li>id: ${employee.id}</li>
-                    <li>email: ${employee.email}</li>
+                    <li>id: ${employee.getId()}</li>
+                    <li>email: ${employee.getEmail()}</li>
                     <li>${getUniqueProperty(employee)}</li>
                 </ul>
             </div>
@@ -21,11 +21,11 @@ const generateCardSection = (employeeData) => {
 function getUniqueProperty(employee) {
     switch (employee.role) {
         case "Manager":
-            return `office number: ${employee.officeNumber}`;
+            return `office number: ${employee.getOfficeNumber()}`;
         case "Engineer":
-            return `github: ${employee.github}`;
+            return `github: ${employee.getGithub()}`;
         case "Intern":
-            return `school: ${employee.school}`;
+            return `school: ${employee.getSchool()}`;
     }
 }
 
