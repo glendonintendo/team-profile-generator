@@ -10,7 +10,7 @@
 ## Description
 The Team Profile Generator is run entirely though the command line. Upon execution of its `index.js` file, the application will prompt the user for employee information and generate a styled webpage using the input information.
 ## Demo
-A video demo of my project can be found [here]().
+A video demo of my project can be found [here](https://www.youtube.com/watch?v=vHey3jjI2Gw).
 ## Technologies Used
 - npm inquirer: used to get prompts from the user in the command line
 - node fs: used to write the html file and copy the css file to the dist folder
