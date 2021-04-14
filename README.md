@@ -8,13 +8,18 @@
   - [Acceptance Criteria](#acceptance-criteria)
   - [Grading Criteria](#grading-criteria)
 ## Description
-
+The Team Profile Generator is run entirely though the command line. Upon execution of its `index.js` file, the application will prompt the user for employee information and generate a styled webpage using the input information.
 ## Demo
-
+A video demo of my project can be found [here]().
 ## Technologies Used
-
+- npm inquirer: used to get prompts from the user in the command line
+- node fs: used to write the html file and copy the css file to the dist folder
 ## Installation, Usage, and Tests
+This application is run through the command line. To run, make sure you have Node.js installed and then run the command `npm i` to install the necessary dependencies. Then run `node index.js` to start the application.
 
+Using the command line interface, answer the prompts. Once complete, an `index.html` file and a `style.css` will be created in the `./dist/` folder.
+
+If you would like to run the test suite, use the command `npm run test` from the command line to run all tests.
 ## Submission Requirements
 ### User Story
 ```
@@ -44,29 +49,29 @@ THEN I exit the application, and the HTML is generated
 ```
 ### Grading Criteria
 #### Deliverables - 15% <!-- omit in toc -->
-- [ ] Sample HTML file generated using the application
-- [ ] GitHub repository containing application code
+- [x] Sample HTML file generated using the application
+- [x] GitHub repository containing application code
 #### Walkthrough Video - 32% <!-- omit in toc -->
-- [ ] Demonstrates functionality of the application
-- [ ] Shows all four passing tests from the command line
-- [ ] Demonstrates how user would invoke the application from the command line
-- [ ] Demonstrates how a user would enter responses to all of the prompts in the application
-- [ ] Shows a generated HTML file that matches the user input
+- [x] Demonstrates functionality of the application
+- [x] Shows all four passing tests from the command line
+- [x] Demonstrates how user would invoke the application from the command line
+- [x] Demonstrates how a user would enter responses to all of the prompts in the application
+- [x] Shows a generated HTML file that matches the user input
 #### Technical Acceptance Criteria - 40% <!-- omit in toc -->
-- [ ] Uses Inquirer package
-- [ ] Uses Jest package for suite of unit tests
-- [ ] Has classes Employee, Manager, Engineer, and Intern
-- [ ] Prompts user for team member information
-  - [ ] Employee (parent) : name, id, email, getName(), getId(), getEmail(), getRole()
-  - [ ] Manager (child) : officeNumber, getRole()
-  - [ ] Engineer (child) : github, getGithub(), getRole()
-  - [ ] Intern (child) : school, getSchool(), getRole()
-- [ ] Prompts follow logic to ask for Manager info, then loops to ask for Engineer or Interns until user stops
-- [ ] Generates a webpage after getting all information
-- [ ] On webpage, emails are clickable and populate TO field with clicked email
+- [x] Uses Inquirer package
+- [x] Uses Jest package for suite of unit tests
+- [x] Has classes Employee, Manager, Engineer, and Intern
+- [x] Prompts user for team member information
+  - [x] Employee (parent) : name, id, email, getName(), getId(), getEmail(), getRole()
+  - [x] Manager (child) : officeNumber, getRole()
+  - [x] Engineer (child) : github, getGithub(), getRole()
+  - [x] Intern (child) : school, getSchool(), getRole()
+- [x] Prompts follow logic to ask for Manager info, then loops to ask for Engineer or Interns until user stops
+- [x] Generates a webpage after getting all information
+- [x] On webpage, emails are clickable and populate TO field with clicked email
 #### Repository Quality - 13% <!-- omit in toc -->
-- [ ] Repository has a unique name
-- [ ] Repository follows best practices for file structure and naming conventions
-- [ ] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-- [ ] Repository contains multiple descriptive commit messages
-- [ ] Repository contains a high-quality README with description and a link to the walkthrough video
+- [x] Repository has a unique name
+- [x] Repository follows best practices for file structure and naming conventions
+- [x] Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- [x] Repository contains multiple descriptive commit messages
+- [x] Repository contains a high-quality README with description and a link to the walkthrough video
