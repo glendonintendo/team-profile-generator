@@ -8,7 +8,7 @@ const generateCardSection = (employeeData) => {
                 <h4>${employee.getRole()}</h3>
                 <ul>
                     <li>id: ${employee.getId()}</li>
-                    <li>email: ${employee.getEmail()}</li>
+                    <li>email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></li>
                     <li>${getUniqueProperty(employee)}</li>
                 </ul>
             </div>
@@ -23,7 +23,7 @@ function getUniqueProperty(employee) {
         case "Manager":
             return `office number: ${employee.getOfficeNumber()}`;
         case "Engineer":
-            return `github: ${employee.getGithub()}`;
+            return `github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>`;
         case "Intern":
             return `school: ${employee.getSchool()}`;
     }
