@@ -10,7 +10,7 @@ const writeFile = fileContent => {
 
             resolve({
                 ok: true,
-                message: 'File created'
+                message: 'Team Profile html file created in the /dist folder.'
             });
         });
     });
@@ -26,7 +26,7 @@ const copyFile = () => {
 
             resolve({
                 ok: true,
-                message: 'Style file copied'
+                message: 'Style css file copied to the /dist folder.'
             });
         });
     });
